@@ -3,7 +3,7 @@ import React from "react";
 import CreditUnit from "./data/credit-unit";
 import AcademicGrade from "./data/academic-grades";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, Terminal } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 const Page = () => {
   return (
@@ -22,11 +22,11 @@ const Page = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
           <div className="bg-white shadow-sm border border-gray-200 p-4 rounded">
             <p className="text-sm text-gray-700">Jumlah sks</p>
-            <h1 className="text-2xl font-bold mt-3">124</h1>
+            <h1 className="text-2xl font-bold mt-3">124/150</h1>
           </div>
           <div className="bg-white shadow-sm border border-gray-200 p-4 rounded">
             <p className="text-sm text-gray-700">Jumlah matakuliah</p>
-            <h1 className="text-2xl font-bold mt-3">80</h1>
+            <h1 className="text-2xl font-bold mt-3">20/40</h1>
           </div>
           <div className="bg-white shadow-sm border border-gray-200 p-4 rounded">
             <p className="text-sm text-gray-700">Pengajuan surat</p>
