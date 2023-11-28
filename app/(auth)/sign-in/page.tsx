@@ -6,13 +6,6 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 
 const Page = () => {
@@ -37,6 +30,9 @@ const Page = () => {
         break;
       case "department":
         destination = "/department/dashboard";
+        break;
+      case "faculty":
+        destination = "/faculty/dashboard";
         break;
       default:
         break;
