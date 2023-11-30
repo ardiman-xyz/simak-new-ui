@@ -23,17 +23,17 @@ const guestRoutes = [
   {
     icon: GraduationCap,
     label: "Program studi",
-    href: "/transaction",
+    href: "/faculty/department",
   },
   {
     icon: Users,
     label: "Mahasiswa",
-    href: "/department/students",
+    href: "/faculty/student",
   },
   {
     icon: Users,
     label: "Dosen",
-    href: "/department/lecturers",
+    href: "/faculty/lecturer",
   },
   {
     icon: CalendarCheck2,
