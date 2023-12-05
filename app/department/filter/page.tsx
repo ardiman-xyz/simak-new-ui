@@ -16,87 +16,59 @@ import {
 import GenderStats from "./_components/genderStats";
 import GradeStats from "./_components/gradeState";
 import FilterForm from "./_components/filterForm";
+import AgeChart from "./_components/ageStats";
+import LocationChart from "./_components/locationStas";
 
 const students = [
   {
     id: 1,
-    name: "Ardiman",
-    nim: "21711170",
+    name: "John Doe",
+    nim: "0001",
     jk: "L",
-    jsks: 120,
-    jmatkul: 20,
+    age: 19,
+    location: "Jakarta",
+    jsks: 110,
+    jmatkul: 10,
   },
   {
     id: 2,
-    name: "Budi Cahyo",
-    nim: "21711171",
-    jk: "L",
-    jsks: 110,
-    jmatkul: 18,
+    name: "Jane Smith",
+    nim: "0002",
+    jk: "P",
+    age: 20,
+    location: "Bandung",
+    jsks: 120,
+    jmatkul: 12,
   },
   {
     id: 3,
-    name: "Citra Prasiska",
-    nim: "21711172",
-    jk: "P",
-    jsks: 115,
-    jmatkul: 19,
+    name: "Bob Williams",
+    nim: "0003",
+    jk: "L",
+    age: 18,
+    location: "Surabaya",
+    jsks: 100,
+    jmatkul: 8,
   },
   {
     id: 4,
-    name: "Diana Pungki",
-    nim: "21711173",
+    name: "Sarah Lee",
+    nim: "0004",
     jk: "P",
-    jsks: 105,
-    jmatkul: 17,
+    age: 21,
+    location: "Medan",
+    jsks: 130,
+    jmatkul: 15,
   },
   {
     id: 5,
-    name: "Eko kurniawan khannedy",
-    nim: "21711174",
+    name: "Mike Davis",
+    nim: "0005",
     jk: "L",
-    jsks: 125,
-    jmatkul: 21,
-  },
-  {
-    id: 6,
-    name: "Fina ambarita",
-    nim: "21711175",
-    jk: "P",
-    jsks: 110,
-    jmatkul: 18,
-  },
-  {
-    id: 7,
-    name: "Gita gunawan",
-    nim: "21711176",
-    jk: "P",
-    jsks: 115,
-    jmatkul: 19,
-  },
-  {
-    id: 8,
-    name: "Hadi",
-    nim: "21711177",
-    jk: "L",
+    age: 19,
+    location: "Jakarta",
     jsks: 105,
-    jmatkul: 17,
-  },
-  {
-    id: 9,
-    name: "Irfan anjlok",
-    nim: "21711178",
-    jk: "L",
-    jsks: 120,
-    jmatkul: 20,
-  },
-  {
-    id: 10,
-    name: "Joko",
-    nim: "21711179",
-    jk: "L",
-    jsks: 125,
-    jmatkul: 21,
+    jmatkul: 11,
   },
 ];
 
@@ -163,6 +135,8 @@ const Page = () => {
         <div className="md:w-1/3 w-full mt-4 md:mt-0 flex flex-col gap-y-5">
           <GenderStats />
           <GradeStats />
+          <AgeChart students={students} />
+          <LocationChart students={students} />
         </div>
       </div>
     </div>
