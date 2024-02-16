@@ -34,6 +34,9 @@ const Page = () => {
       case "faculty":
         destination = "/faculty/dashboard";
         break;
+      case "admin":
+        destination = "/admin/dashboard";
+        break;
       default:
         break;
     }
